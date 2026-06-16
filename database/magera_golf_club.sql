@@ -23,6 +23,14 @@ CREATE TABLE IF NOT EXISTS tournaments (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS contact_messages (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(160) NOT NULL,
+    email VARCHAR(190) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
 INSERT INTO users (name, email, password_hash)
 VALUES ('Administrator', 'admin@magera.sk', '$2y$10$M7cvX6oSNNjnInbegAwMRe0Ia/8HWecxNhlcMUyCj1sZuBPb56Dra')
 ON DUPLICATE KEY UPDATE email = email;

@@ -17,6 +17,7 @@
 
         <nav>
             <a href="/Magera_golf_club-master/admin/index.php" class="active"><i class="bi-trophy"></i> Turnaje</a>
+            <a href="/Magera_golf_club-master/admin/messages.php"><i class="bi-envelope"></i> Spravy</a>
             <a href="/Magera_golf_club-master/index.php"><i class="bi-house"></i> Web</a>
             <a href="/Magera_golf_club-master/admin/logout.php"><i class="bi-box-arrow-right"></i> Odhlasit</a>
         </nav>
